@@ -88,8 +88,8 @@ function setup_remote_user() {
 	printf "[\e[0;34mNOTICE\e[0m] Setting up remote repository.\n"
 
   cd "$GITHUB_WORKSPACE/../../$WPENGINE_ENVIRONMENT_NAME" && \
-	git config user.name "Automated Deployment" && \
-	git config user.email "automation@uship.com"
+	git config user.name "somoscuatro" && \
+	git config user.email "tech@somoscuatro.es"
 }
 
 function deploy() {
