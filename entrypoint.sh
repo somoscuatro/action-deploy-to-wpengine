@@ -75,9 +75,9 @@ function copy_local_repo_to_wpengine() {
 }
 
 function cleanup_blocklist_files() {
-	printf "[\e[0;34mNOTICE\e[0m] Removing files in blocklist.\n"
+	printf "[\e[0;34mNOTICE\e[0m] Removing files in excluded list.\n"
 
-  readarray -t filefolders < "$GITHUB_WORKSPACE/.github/assets/blocklist"
+  readarray -t filefolders < "$GITHUB_WORKSPACE/.github/workflows/deploy/excluded"
   	for filefolder in "${filefolders[@]}"
   	do
   		rm -rf "$GITHUB_WORKSPACE/../../$WPENGINE_ENVIRONMENT_NAME/$filefolder"
