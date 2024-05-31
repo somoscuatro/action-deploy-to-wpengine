@@ -1,3 +1,7 @@
 name: "Deploy to WPEngine"
 description: "An action to deploy a WordPress project to a WP Engine site via git."
 author: "somoscuatro"
+
+branding:
+  icon: "box"
+  color: "blue"
