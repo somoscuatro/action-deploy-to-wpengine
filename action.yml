@@ -1,0 +1,11 @@
+name: "Deploy to WPEngine"
+description: "An action to deploy a WordPress project to a WP Engine site via git."
+author: "somoscuatro"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "box"
+  color: "blue"
